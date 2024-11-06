@@ -12,8 +12,11 @@ To run end-to-end (E2E) tests for the e-mail box on `poczta.wp.pl` using Playwri
 ```bash
 npm install
 ```
-
-2. **Create the wp.env environment file:**
+2. **Install playwright dependencies:**
+```bash
+npx playwright install
+```
+3. **Create the wp.env environment file:**
 - In the root of your project, create an .env file named **wp.env**.
 - In this file, define the following environment variables:
 ```bash
@@ -21,8 +24,7 @@ USER_LOGIN=your_login_wp
 USER_PASSWORD=your_wp_password
 ```
 - Enter your WP mail username and password in the appropriate fields.
-
-3. **Running tests with the Playwright interface:**
+4. **Running tests with the Playwright interface:**
 ```
 npx playwright test --ui
 ```
