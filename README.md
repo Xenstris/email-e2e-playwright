@@ -5,6 +5,7 @@
 To run end-to-end (E2E) tests for the e-mail box on `poczta.wp.pl` using Playwright, you must have:
 - Node.js (recommended version: 16 or higher)
 - NPM (built in Node.js)
+- User have created and verfied account - when trying to create new Mail user have to authenticate that is a human (only once).
 
 ## Startup instructions
 
