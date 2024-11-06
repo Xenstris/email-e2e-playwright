@@ -1,28 +1,28 @@
 # email-e2e-playwright
 
-## Wymagania wstępne
+## Prerequisites
 
-Aby uruchomić testy end-to-end (E2E) dla skrzynki e-mail na `poczta.wp.pl` z użyciem Playwright, musisz mieć zainstalowane:
-- Node.js (zalecana wersja: 16 lub wyższa)
-- NPM (wbudowany w Node.js)
+To run end-to-end (E2E) tests for the e-mail box on `poczta.wp.pl` using Playwright, you must have:
+- Node.js (recommended version: 16 or higher)
+- NPM (built in Node.js)
 
-## Instrukcja uruchomienia
+## Startup instructions
 
-1. **Zainstaluj zależności:**
+1. **Install dependencies:**
 ```bash
 npm install
 ```
 
-2. **Utwórz plik środowiskowy wp.env:**
-- W katalogu głównym projektu utwórz plik .env o nazwie **wp.env**.
-- W pliku tym zdefiniuj następujące zmienne środowiskowe:
+2. **Create the wp.env environment file:**
+- In the root of your project, create an .env file named **wp.env**.
+- In this file, define the following environment variables:
 ```bash
-USER_LOGIN=twoj_login_wp
-USER_PASSWORD=twoje_haslo_wp
+USER_LOGIN=your_login_wp
+USER_PASSWORD=your_wp_password
 ```
-- Wprowadź swój login i hasło użytkownika do poczty WP w odpowiednich polach.
+- Enter your WP mail username and password in the appropriate fields.
 
-3. **Uruchamianie testów z interfejsem Playwright:**
+3. **Running tests with the Playwright interface:**
 ```
 npx playwright test --ui
 ```
