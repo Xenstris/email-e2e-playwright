@@ -7,13 +7,14 @@ To run end-to-end (E2E) tests for the e-mail box on `poczta.wp.pl` using Playwri
 - NPM (built in Node.js)
 - User has created and verfied account:
     Steps to verify:
-      1) Log in
-      2) Create new message
-      3) Fill recipient
-      4) Fill Subject
-      5) Fill body
-      6) Click send button
-      7) Confirm that you are human.
+      
+1) Log in
+2) Create new message
+3) Fill recipient
+4) Fill Subject
+5) Fill body
+6) Click send button
+7) Confirm that you are human.
  
 **Note:** Without confirmation of account test will fail.
  
