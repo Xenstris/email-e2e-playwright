@@ -11,9 +11,9 @@ test('Logowanie na WP Poczcie', async ({ page }) => {
 
     await wpLoginPage.goto();
     await wpLoginPage.acceptCookies();
-    await wpLoginPage.login(process.env.USER_LOGIN, process.env.USER_PASSWORD);
+    await wpLoginPage.login(process.env.USER_EMAIL, process.env.USER_PASSWORD);
     await inboxPage.leftNavigationBar.clickToWriteNewMail();
-    await inboxPage.composeMail.composeAndSendMail(process.env.USER_LOGIN, mailSubject, mailBody);
+    await inboxPage.composeMail.composeAndSendMail(process.env.USER_EMAIL, mailSubject, mailBody);
     await inboxPage.mainIbox.assertEmailWithPolling(mailSubject);
     await inboxPage.logout();
 });
