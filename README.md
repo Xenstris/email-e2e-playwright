@@ -17,7 +17,7 @@ To run end-to-end (E2E) tests for the e-mail box on `poczta.wp.pl` using Playwri
 6. Click send button
 7. Confirm that you are human.
 
-**Note:** Without confirmation of account test will fail.
+<span style="color: red;">**Note:** Without verification of account test will fail.</span>
 
 ## Startup instructions
 
