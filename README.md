@@ -14,7 +14,7 @@ npm install
 ```
 
 2. **Utwórz plik środowiskowy wp.env:**
-- W katalogu głównym projektu utwórz plik .env o nazwie wp.env.
+- W katalogu głównym projektu utwórz plik .env o nazwie **wp.env**.
 - W pliku tym zdefiniuj następujące zmienne środowiskowe:
 ```bash
 USER_LOGIN=twoj_login_wp
