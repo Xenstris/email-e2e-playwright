@@ -12,7 +12,6 @@ export async function pollRequest(
         const result = await requestFn();
 
         if (result === expectedResult) {
-            expect(result).toBe(expectedResult);
             return;
         }
 
