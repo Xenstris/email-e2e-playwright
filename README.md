@@ -35,10 +35,9 @@ npm install
 npx playwright install
 ```
 
-3. **Create the wp.env environment file:**
+3. **Define the wp.env environment variables:**
 
--   In the root of your project, create an .env file named **wp.env**.
--   In this file, define the following environment variables:
+-   In **wp.env** file define the following environment variables:
 
 ```bash
 USER_EMAIL=your_login_wp

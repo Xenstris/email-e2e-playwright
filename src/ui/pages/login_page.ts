@@ -13,13 +13,11 @@ export class WpMailLoginPage {
         this.loginInput = page.locator('#login');
         this.passwordInput = page.locator('#password');
         this.loginButton = page.locator('button[type="submit"]');
-        this.acceptCookiesButton = page.locator(
-            'button:has-text("AKCEPTUJĘ I PRZECHODZĘ DO SERWISU")',
-        );
+        this.acceptCookiesButton = page.locator('button:has-text("AKCEPTUJĘ I PRZECHODZĘ DO SERWISU")');
     }
 
     async goto() {
-        await this.page.goto('https://poczta.wp.pl/login/login.html');
+        await this.page.goto(process.env.WP_LOGIN_PAGE as string);
     }
 
     async login(username: string, password: string) {
@@ -31,7 +29,7 @@ export class WpMailLoginPage {
     async acceptCookies() {
         if (await this.acceptCookiesButton.isVisible()) {
             await this.acceptCookiesButton.click();
-            await expect(this.acceptCookiesButton).not.toBeVisible({ timeout: 5000 });
+            await expect(this.acceptCookiesButton).not.toBeVisible();
         }
     }
 }
