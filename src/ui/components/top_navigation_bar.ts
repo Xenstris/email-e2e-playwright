@@ -19,6 +19,7 @@ export class TopNavigationBar {
 
     async assertUserMenuIsVisble() {
         await this.clickOnUserIcon();
+        await this.page.waitForTimeout(500); //wait to see if userMenu disapeared
         if (await this.userMenu.assertIsLogoutButtonVisible()) {
             return true;
         }
