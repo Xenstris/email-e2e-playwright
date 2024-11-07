@@ -9,7 +9,7 @@ export class MainInbox {
 
     constructor(page: Page) {
         this.page = page;
-        this.inboxSectionTitle = page.locator('p', { hasText: 'Odebrane: Główne' });
+        this.inboxSectionTitle = page.locator('p', { hasText: 'Odebrane' });
         this.refreshButton = this.page.getByRole('button', {
             name: 'Odśwież',
             exact: true,
