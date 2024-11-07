@@ -12,4 +12,8 @@ export class UserMenu {
     async logout() {
         await this.logoutButton.click();
     }
+
+    async assertIsLogoutButtonVisible() {
+        return await this.logoutButton.isVisible();
+    }
 }

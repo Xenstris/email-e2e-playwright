@@ -23,7 +23,7 @@ export class InboxPage {
     }
 
     async logout() {
-        await this.topNavigationBar.clickOnUserIcon();
+        await this.topNavigationBar.pollClickOnUserIcon(); //poll method is used due to user menu not always appearing after click
         await this.userMenu.logout();
     }
 }
