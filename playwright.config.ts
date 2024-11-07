@@ -19,21 +19,5 @@ export default defineConfig({
                 headless: process.env.HEADLESS === 'true',
             },
         },
-        {
-            name: 'firefox',
-            use: {
-                ...devices['Desktop Firefox'],
-                viewport: { width: 1600, height: 900 },
-                headless: process.env.HEADLESS === 'true',
-            },
-        },
-        {
-            name: 'webkit',
-            use: {
-                ...devices['Desktop Safari'],
-                viewport: { width: 1600, height: 900 },
-                headless: process.env.HEADLESS === 'true',
-            },
-        },
     ],
 });

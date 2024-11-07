@@ -29,7 +29,7 @@ To run end-to-end (E2E) tests for the e-mail box on `poczta.wp.pl` using Playwri
 npm install
 ```
 
-2. **Install playwright dependencies:**
+2. **Install playwright browsers:**
 
 ```bash
 npx playwright install
