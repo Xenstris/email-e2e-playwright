@@ -10,6 +10,7 @@ export class TopNavigationBar {
     }
 
     async clickOnUserIcon() {
+        await this.userButton.isVisible();
         await this.userButton.click();
     }
 }
