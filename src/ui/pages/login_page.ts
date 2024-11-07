@@ -27,9 +27,8 @@ export class WpMailLoginPage {
     }
 
     async acceptCookies() {
-        if (await this.acceptCookiesButton.isVisible()) {
-            await this.acceptCookiesButton.click();
-            await expect(this.acceptCookiesButton).not.toBeVisible({ timeout: 5000 });
-        }
+        await this.acceptCookiesButton.isVisible();
+        await this.acceptCookiesButton.click();
+        await expect(this.acceptCookiesButton).not.toBeVisible();
     }
 }
