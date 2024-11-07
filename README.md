@@ -46,7 +46,13 @@ USER_PASSWORD=your_wp_password
 
 -   Enter your WP mail username and password in the appropriate fields.
 
-4. **Running tests with the Playwright interface:**
+4. **Running tests with the Playwright**
+
+```
+npx playwright test
+```
+
+5. **Running tests with the Playwright interface:**
 
 ```
 npx playwright test --ui
