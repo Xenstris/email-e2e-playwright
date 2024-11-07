@@ -19,6 +19,8 @@ To run end-to-end (E2E) tests for the e-mail box on `poczta.wp.pl` using Playwri
 
 <span style="color: red;">**Note:** Without verification of account test will fail.</span>
 
+**Note2:** The specific locators used are necessary because the page has dynamic classes and lacks unique identifiers, making it difficult to rely on standard selectors for stable element identification.
+
 ## Startup instructions
 
 1. **Install dependencies:**

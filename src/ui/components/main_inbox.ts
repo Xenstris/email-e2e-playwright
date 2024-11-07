@@ -10,7 +10,7 @@ export class MainInbox {
     constructor(page: Page) {
         this.page = page;
         this.inboxSectionTitle = page.locator('p', { hasText: 'Odebrane: Główne' });
-        this.refreshButton = this.refreshButton = this.page.getByRole('button', {
+        this.refreshButton = this.page.getByRole('button', {
             name: 'Odśwież',
             exact: true,
         });
@@ -33,11 +33,11 @@ export class MainInbox {
 
         for (let i = 0; i < (await emails.count()); i++) {
             const email = emails.nth(i);
+            const emailHasSender = await email.locator(`span:has-text("${sender}")`).count();
+            const emailHasSubject = await email.locator(`div:has-text("${subject}")`).count();
 
-            if ((await email.locator(`span:has-text("${sender}")`).count()) > 0) {
-                if ((await email.locator(`div:has-text("${subject}")`).count()) > 0) {
-                    return true;
-                }
+            if (emailHasSender > 0 && emailHasSubject > 0) {
+                return true;
             }
         }
         return false;
